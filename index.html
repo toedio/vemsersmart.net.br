@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vem Ser Smart Negócios Imobiliarios</title>
+    <style>
+        :root {
+            --cor-primaria: #f0f0f0;
+            --cor-secundaria: #00365c;
+            --cor-fundo: #f5f7f9;
+            --cor-texto: #1f1f1f;
+            --cor-clara: #fff;
+            --cor-subtexto: #555;
+            --cor-footer: #ccc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--cor-texto);
+            background-color: var(--cor-fundo);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--cor-primaria);
+            color: var(--cor-clara);
+            padding: 20px 40px;
+        }
+
+        header img {
+            height: 250px;
+            /* Fundo claro para a logo se destacar no header preto */
+            background-color: #f0f0f0; 
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        header div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav {
+            background: var(--cor-secundaria);
+            padding: 10px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--cor-clara);
+        }
+
+        .hero {
+            background: url("banner.png") center/cover no-repeat;
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cor-clara);
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            padding: 30px 0;
+        }
+
+        section {
+            padding: 60px 40px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service {
+            background: var(--cor-clara);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .service h3 {
+            color: var(--cor-secundaria);
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: var(--cor-subtexto);
+        }
+
+        #about {
+            background: var(--cor-clara);
+        }
+
+        #about p {
+            color: var(--cor-subtexto);
+            padding: 20px;
+            margin: 10px 30px;
+        }
+
+        #contato {
+            padding: 0;
+            background: var(--cor-secundaria);
+        }
+
+        .contact-centered {
+            color: var(--cor-clara);
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .contact-centered h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-centered p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: var(--cor-secundaria);
+            color: var(--cor-footer);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+            <img src="logo.png" alt="Logo Vem Ser Smart Negócios Imobiliarios" />
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Especialistas em imóveis na Planet Smart City – Aquiraz</h2>
+    </section>
+
+    <section id="about">
+        <h2 style="text-align:center; margin-bottom: 40px;">Sobre nós</h2>
+        <p>
+            Somos uma imobiliária local, com atuação focada, atendimento personalizado e profundo conhecimento da região. Ajudamos você a comprar, vender ou investir com segurança, transparência e agilidade — dentro de um conceito de cidade que une inovação urbana, tecnologia, sustentabilidade e qualidade de vida.
+        </p>
+    </section>
+
+    <section id="servicos">
+        <h2 style="text-align:center; margin-bottom: 40px;">Nossos Serviços</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Venda de lotes e casas na Planet Smart City</h3>
+                <p>Encontre o imóvel ideal para morar ou investir na cidade inteligente do Ceará.</p>
+            </div>
+            <div class="service">
+                <h3>Intermediação completa e segura</h3>
+                <p>Conectamos investidores, moradores e construtores com as melhores oportunidades.</p>
+            </div>
+            <div class="service">
+                <h3>Suporte em todas as etapas</h3>
+                <p>Acompanhamos você da escolha do imóvel até a assinatura do contrato.</p>
+            </div>
+            <div class="service">
+                <h3>Atendimento especializado e local</h3>
+                <p>Nossos profissionais conhecem cada detalhe do bairro, do projeto e do plano diretor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contact-centered">
+            <p>V LO D8, 158 - Bairro Patacas, Aquiraz - CE</p>
+            <p>contato@vemsersmart.net.br</p>
+            <p>(85) 9940-6020</p>
+            <p>CNPJ: 55.420.834/0001-48</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Vem Ser Smart Negócios Imobiliarios. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
